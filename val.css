@@ -1,0 +1,123 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    background-image: url('background.jpg');
+    color: white;
+}
+
+header{
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+
+    animation-name: head;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    color:  rgb(255, 70, 85);
+    box-sizing: border-box;
+  
+}
+
+@keyframes head {
+    0%{right: 0%;}
+    50%{right: -80%; color: white;}
+    100%{right: 0%;}
+
+}
+footer{
+    font-style: italic;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+    margin-top: 50px;
+}
+div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+main h2{
+    flex-basis: 100%;
+    font-size: 45px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+div > h2{
+    flex-basis: 100%;
+    font-size: 45px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+
+.agent-img{
+    flex: 1;
+    display: block;
+    width: 320px;
+    height: 370px;
+    object-fit: contain;
+    border: 0.1px white solid;
+    background-color:rgba(72, 72, 69, 0.482);
+}
+figure{
+    transition: transform 0.05s ease;
+}
+figure:hover{
+    opacity: 0.6; 
+    transform: scale(1.08);
+    cursor: pointer;
+}
+figcaption{
+    flex: 1;
+    color: black;
+    font-size: 20px;
+    background-color: white;
+    padding: 7px 15px;
+    margin-bottom: 12px;
+    visibility: hidden;
+}
+
+figure:hover figcaption{
+    visibility: visible;
+}
+
+figcaption.favorite::after{
+    content: "My Personal Favorite";
+    margin-left: 105px;
+    color: rgb(72, 170, 116);
+}
+
+nav{
+    text-align: center;
+    font-size: 30px;
+}
+a{
+    text-decoration:  none;
+    color: white;
+    background-color: rgb(255, 70, 85);
+    padding: 10px;
+    display: block;
+    margin: 6px 505px;
+}
+a:hover{
+    opacity: 0.6;
+}
+
+.poster{
+    margin: 35px 50px 60px 50px;
+    width: 1150px;
+    height: 1200px;
+}
+
+p{
+    width: 90%;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-bottom: 60px;
+    padding: 15px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
