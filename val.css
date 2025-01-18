@@ -5,23 +5,11 @@ body {
 }
 
 header{
-    position: relative;
     font-size: 40px;
     text-align: center;
-
-    animation-name: head;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
     color:  rgb(255, 70, 85);
     box-sizing: border-box;
-  
-}
-
-@keyframes head {
-    0%{right: 0%;}
-    50%{right: -80%; color: white;}
-    100%{right: 0%;}
-
+    margin-left: 490px;
 }
 footer{
     font-style: italic;
